@@ -9,11 +9,12 @@ import PostPage from './pages/PostPage';
 const App = () => {
   return (
     <Routes>
-      <Route path="/listpage" exact element={<PostListPage />} />
+      <Route path="/" element={<PostListPage />} exact />
+      <Route path="/@:username" element={<PostListPage />} exact />
       <Route path="/login" element={<LoginPage />} />
       <Route path="/register" element={<RegisterPage />} />
       <Route path="/write" element={<WritePage />} />
-      <Route path="/:postId" element={<PostPage />} />
+      <Route path="/@:username/:postId" element={<PostPage />} />
     </Routes>
   );
 };
