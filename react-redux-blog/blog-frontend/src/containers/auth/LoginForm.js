@@ -4,7 +4,6 @@ import { useDispatch, useSelector } from 'react-redux';
 import { changeField, initializeForm, login } from '../../modules/auth';
 import AuthForm from '../../components/auth/AuthForm';
 import { check } from '../../modules/user';
-import { createSearchParams } from '../../../node_modules/react-router-dom/index';
 
 const LoginForm = () => {
   const [error, setError] = useState(null);
